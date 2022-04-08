@@ -24,4 +24,8 @@ export class MenuService {
     return this.http.post("http://localhost:3110/additem",{"list":item})
     .subscribe(data =>{console.log(data)})
   }
+
+  deleteProduct(id:any){
+    return this.http.delete("http://localhost:3110/remove/"+id);
+  }
 }

@@ -24,4 +24,11 @@ export class MenuComponent implements OnInit {
     })
   }
 
+  deleteMenu(item:any){
+    this.menuService.deleteProduct(item._id)
+      .subscribe((data) => {
+        this.menu = this.menu.filter((p:any) => p  !== item);
+      })
+    }
+
 }
