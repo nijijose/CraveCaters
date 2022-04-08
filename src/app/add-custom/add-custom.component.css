@@ -1,0 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    /* background: url(https://i.pinimg.com/originals/0b/40/dd/0b40ddd53c733b7a6abcf63aa4d8d587.jpg);
+    background-size: cover; */
+    padding-top: 25px; 
+    padding-left: 20%;
+    padding-bottom: 25px;
+    color: white;
+}

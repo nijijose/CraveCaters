@@ -1,0 +1,30 @@
+<br>
+<div class="container">
+  <div class="row row-cols-3 g-4"  >
+    <div class="col" *ngFor='let item of menu'>
+      <div class="card h-100 tex-white bg-dark border-warning shadow">
+        <img [src]="item.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="head">{{item.foodMenu}}</h5>
+          <p class="card-text">Rate :{{item.rate}}</p>
+          <div>
+            <button class="btn btn-primary" (click)='item.visible = !item.visible'>{{item.visible? 'Hide' : 'View'}} Items</button>
+            <ul id="list" *ngIf='item.visible'>
+              <li>{{item.foodItem1}}</li>
+              <li>{{item.foodItem2}}</li>
+            </ul>
+          </div>
+           <br>
+          
+           <button class="btn btn-primary"id="but">Add to Cart</button>
+         <br>
+         
+         <br>
+          <button class="btn btn-primary" id="hit">Delete</button>
+          <button class="btn btn-primary" >Edit</button>
+
+        </div>
+      </div>
+    </div>   
+</div>
+</div>

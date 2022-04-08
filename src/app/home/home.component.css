@@ -1,0 +1,65 @@
+#txt2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+}
+#txt3{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 25px;
+}
+#vision{
+    font-family: cursive;
+    font-weight: 200;
+    text-align: justify;
+    background-color:black;
+    color: aliceblue;
+}
+#mission{
+    font-family: cursive;
+    font-weight: 200;
+    text-align: justify;
+    background-color: black;
+    color: aliceblue;
+}
+#quote{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: large;
+    
+ 
+}
+#ll{
+    align-content: flex-end;
+}
+#colo{
+    background-color:black;
+    height: 200px;
+    width: 100%;
+}
+#visio{
+    text-align: center;
+    color: aliceblue;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+#team{
+    text-align: center;
+    color: aliceblue;
+    font-family:cursive;
+
+}
+#co{
+    box-flex-group: black;
+    background-color:black;
+    text-align: justify;
+   color: aliceblue;
+}
+#foo{
+    height: 250px;
+    width: auto;
+}

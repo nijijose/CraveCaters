@@ -1,0 +1,57 @@
+/*
+#tl{
+  margin-left: 20%;
+  font-family:monospace;
+ font-weight: bold;
+ 
+}
+#name{
+  
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 25px;
+ 
+  
+}
+.nav-item{
+  float:inline-end;
+  align-items: baseline;
+  text-align: end;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+}*/
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#motto{
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+}
+#name{
+  font-family:fantasy;
+  font-weight: bolder;
+  font-size: 45px;
+}

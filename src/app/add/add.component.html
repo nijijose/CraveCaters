@@ -1,0 +1,53 @@
+
+<div class="main" >
+    <form #addmenu="ngForm" (ngSubmit) = "AddMenu()">
+    <div class="row g-3 align-items-center form-group">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">Food Menu</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" name="menu" class="form-control" required [(ngModel)]="menuItem.foodMenu">
+      </div>
+    </div>
+    <br>
+    <div class="row g-3 align-items-center form-group">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label" style="padding-right: 49px;">Rate</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" name="rate"  class="form-control" required [(ngModel)]="menuItem.rate" >
+      </div>
+    </div>
+    <br>
+    <div class="row g-3 align-items-center form-group">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">Food Item1</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" name="item1" class="form-control" required [(ngModel)]="menuItem.foodItem1">
+      </div>
+    </div>
+    <br>
+    <div class="row g-3 align-items-center form-group">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">Food Item2</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" name="item2" class="form-control" required [(ngModel)]="menuItem.foodItem2" >
+      </div>
+    </div>
+    <br>
+    <div class="row g-3 align-items-center form-group">
+      <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label" style="padding-right: 37px;">Image</label>
+      </div>
+      <div class="col-auto">
+        <input type="text" name="image" class="form-control" required [(ngModel)]="menuItem.imageUrl" >
+      </div>
+    </div>
+    <br>
+      <button type="submit" class="btn btn-primary" [disabled]="addmenu.form.invalid">Add to Menu</button>
+    </form>
+    </div>
+    
+  
