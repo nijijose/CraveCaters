@@ -1,0 +1,34 @@
+<div class="main">
+    <form #addcustom="ngForm" (ngSubmit) = "edititem()">
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label" style="padding-right: 10px;">Food Menu</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" name="item"  class="form-control" required [(ngModel)]="customItem.foodMenu">
+            </div>
+          </div>
+          <br>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label" style="padding-right: 49px;">Rate</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" name="rate" class="form-control" required [(ngModel)]="customItem.rate">
+            </div>
+          </div>
+          <br>
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label" style="padding-right: 37px;">Image</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" name="image" class="form-control" required [(ngModel)]="customItem.imageUrl">
+            </div>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary" [disabled]="addcustom.form.invalid">Update Customise Order</button>
+    
+    </form>
+    </div>
+    

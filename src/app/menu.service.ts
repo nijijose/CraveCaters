@@ -28,4 +28,20 @@ export class MenuService {
   deleteProduct(id:any){
     return this.http.delete("http://localhost:3110/remove/"+id);
   }
+
+  deleteCustomProduct(id:any){
+    return this.http.delete("http://localhost:3110/del/"+id);
+  }
+
+  editProduct(item:any){
+    console.log('item updated')
+    return this.http.put("http://localhost:3110/update",item)
+    .subscribe(data =>{console.log(data)})
+  }
+
+  editCustomProduct(item:any){
+    console.log('item updated')
+    return this.http.put("http://localhost:3110/increment",item)
+    .subscribe(data =>{console.log(data)})
+  }
 }

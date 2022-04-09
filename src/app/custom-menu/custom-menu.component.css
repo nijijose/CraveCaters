@@ -1,9 +1,7 @@
 
-#hit{
-    float: right;
-    padding-left:15px;
-    padding-right: 15px;
+.card-title{
+    color: white !important;
 }
-#but{
-    float: right;
- } 
+#rate{
+    color: white !important;
+}

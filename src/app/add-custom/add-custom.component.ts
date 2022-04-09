@@ -13,7 +13,7 @@ export class AddCustomComponent implements OnInit {
   constructor(private menuService:MenuService,private router:Router) { }
 
   customItem = {
-    foodItem : '',
+    foodMenu : '',
     rate : '',
     imageUrl : ''
   }

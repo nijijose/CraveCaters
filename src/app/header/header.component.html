@@ -86,7 +86,10 @@
             <a class="nav-link"  routerLink="/custom" rel="nofollow">CUSTOMISE ORDER</a>
           </li>
           <li class="nav-item mx-1">
-            <a class="nav-link" routerLink="/cart">CART</a>
+            <a class="nav-link" routerLink="/cart">CART
+              <i style="font-size: 20px;" class="fa fa-cart-plus"></i>
+            <div style="font-size: 8px;" class="badge bg-danger">{{totalItem}}</div>
+            </a>
           </li>
           <li class="nav-item mx-1">
             <a class="nav-link" routerLink="/add">ADD DISHES</a>

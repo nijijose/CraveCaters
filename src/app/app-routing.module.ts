@@ -6,13 +6,17 @@ import { CartComponent } from './cart/cart.component';
 import { CustomMenuComponent } from './custom-menu/custom-menu.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { UpdatecustomComponent } from './updatecustom/updatecustom.component';
+import { UpdatemenuComponent } from './updatemenu/updatemenu.component';
 
 const routes: Routes = [{path:'menu',component:MenuComponent},
   {path:'add',component:AddComponent},{
   path:'custom',component:CustomMenuComponent},
   {path:'addcustom',component:AddCustomComponent},
   {path:'cart',component:CartComponent},
-  {path:'',component:HomeComponent}];
+  {path:'',component:HomeComponent},
+  {path:'update',component:UpdatemenuComponent},
+  {path:'increment',component:UpdatecustomComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

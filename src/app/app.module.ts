@@ -14,6 +14,9 @@ import { AddCustomComponent } from './add-custom/add-custom.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { CartService } from './cart.service';
+import { UpdatemenuComponent } from './updatemenu/updatemenu.component';
+import { UpdatecustomComponent } from './updatecustom/updatecustom.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { FooterComponent } from './footer/footer.component';
     AddCustomComponent,
     CartComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    UpdatemenuComponent,
+    UpdatecustomComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [MenuService],
+  providers: [MenuService,CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,6 @@
 export class CustomModel{
     constructor(    
-     public foodItem : String,
+     public foodMenu : String,
      public rate : Number,
      public imageUrl : String){}
 }
