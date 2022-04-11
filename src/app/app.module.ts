@@ -17,6 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CartService } from './cart.service';
 import { UpdatemenuComponent } from './updatemenu/updatemenu.component';
 import { UpdatecustomComponent } from './updatecustom/updatecustom.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { UpdatecustomComponent } from './updatecustom/updatecustom.component';
     HomeComponent,
     FooterComponent,
     UpdatemenuComponent,
-    UpdatecustomComponent
+    UpdatecustomComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
